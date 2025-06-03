@@ -1,6 +1,8 @@
 # Solid Suspension Processor GUI
 
-This project provides a graphical user interface (GUI) for processing solid suspension images using a pre-trained deep learning model. The GUI is built with Tkinter and allows users to select input folders, model paths, and processing parameters, then runs the analysis and saves results.
+This project provides a graphical user interface (GUI) for processing solid suspension images using a pre-trained deep learning model. The GUI is built with Tkinter and allows users to select input folders, model paths, and processing parameters, then runs the analysis, saves results and produces a figure which compares the degree of mixing as shown below: 
+
+![GUI_solid_suspension_2](https://github.com/user-attachments/assets/6e4a17ac-b885-460b-be4a-2571fe05ab27)
 
 ## Features
 
@@ -48,6 +50,7 @@ pip install -e .
     - Browse and select the folder containing your trained model.
     - Set the batch size and image resize value as needed.
     - Click "Run Processing" to start the analysis.
+![GUI_solid_suspension](https://github.com/user-attachments/assets/1ecdffe3-8abb-4e5d-9045-921e77a5fe18)
 
 4. Results will be saved in a `Results` folder next to your raw videos directory.
 
