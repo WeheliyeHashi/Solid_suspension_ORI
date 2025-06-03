@@ -156,7 +156,7 @@ def main_processor(rawvideos_path, model_path='model/solid_model', Batch_size=32
 def main():
     parser = argparse.ArgumentParser(description="Process images and predict using a pre-trained model.")
     parser.add_argument('--rawvideos_path', type=str, help='Path to the folder containing raw videos.')
-    parser.add_argument('--model_path', type=str, default='model/solid_model', help='Path to the pre-trained model.')
+    parser.add_argument('--model_path', type=str, help='Path to the pre-trained model.')
     parser.add_argument('--batch_size', type=int, default=32, help='Batch size for processing images.')
     parser.add_argument('--im_size', type=int, default=256, help='Image size for resizing.')
 
