@@ -67,7 +67,7 @@ pip install -e .
 
 ## Model
 
-The model for detecting the walls can be found in sharepoint: Bioprocessing/Documents/OBP-EMC- Engineering Mixing Characterisation/PIV/EMC-0061
+The model for prediciting the mixing degree can be found in sharepoint: Bioprocessing/Documents/OBP-EMC- Engineering Mixing Characterisation/PIV/EMC-0061
 
 ---
 
