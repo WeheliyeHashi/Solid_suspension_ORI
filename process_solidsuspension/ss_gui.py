@@ -3,6 +3,7 @@ from tkinter import Tk, Label, Entry, Button, IntVar, StringVar, filedialog
 import os
 from pathlib import Path
 from Process_main_images_GUI import main_processor
+#import process_solidsuspension as pss
 #%%
 class SolidSuspensionProcessorGUI:
     def __init__(self, master):
@@ -56,7 +57,7 @@ class SolidSuspensionProcessorGUI:
         self.status_message.set(status) 
         self.status_label.config(text="Analysis in process...", fg="red")
         self.master.update_idletasks()  
-        main_processor(raw_videos, model, batch_size, image_size)  # Call the main processing function
+        main_processor(raw_videos, model, batch_size, image_size)  # Call the main processing function ...use pss later 
         self.status_label.config(text="Analysis completed", fg="green")
 
 def main():
