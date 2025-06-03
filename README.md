@@ -33,8 +33,8 @@ pip install -e .
 1. Clone this repository:
 
     ```sh
-    git clone https://github.com/yourusername/solid-suspension-gui.git
-    cd solid-suspension-gui
+    https://github.com/WeheliyeHashi/Solid_suspension_ORI.git
+    cd Solid_suspension_ORI
     ```
 
 2. Run the GUI:
