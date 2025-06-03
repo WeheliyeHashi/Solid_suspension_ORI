@@ -123,7 +123,8 @@ def main_processor(rawvideos_path, model_path='model/solid_model', Batch_size=32
     df_exploded.to_csv(results_path / 'predictions_exploded.csv', index=False)
     # Plot the results and save the figure
     plt.figure(figsize=(10, 6))
-    plt.axhspan(0, 0.8, facecolor='red', alpha=0.2)
+    plt.axhspan(0, 0.6, facecolor='red', alpha=0.2)
+    plt.axhspan(0.6, 0.8, facecolor='orange', alpha=0.2)
     plt.axhspan(0.8, 1, facecolor='green', alpha=0.2)
 
     sns.lineplot(
@@ -138,7 +139,7 @@ def main_processor(rawvideos_path, model_path='model/solid_model', Batch_size=32
         
     )
     plt.xlabel('Speed [rpm]')
-    plt.ylabel('Mixing Degree [-]')  # Assuming 'Mixing Degree' is the median value
+    plt.ylabel('Degree of Mixing [-]')  # Assuming 'Mixing Degree' is the median value
     #plt.title('Median Value vs Speed [rpm] by Condition')
     plt.legend(loc='best')
     plt.grid()
@@ -146,6 +147,7 @@ def main_processor(rawvideos_path, model_path='model/solid_model', Batch_size=32
     plt.tight_layout()
     # Add text annotations for the regions
     plt.text(df['Speed [rpm]'].min(), 0.4, 'Aggregated', color='black', fontsize=12, va='center', ha='left', alpha=1)
+    plt.text(df['Speed [rpm]'].min(), 0.7, 'Aggregated+Well-suspended', color='black', fontsize=12, va='center', ha='left', alpha=1)
     plt.text(df['Speed [rpm]'].min(), 0.9, 'Well-suspended', color='black', fontsize=12, va='center', ha='left', alpha=1)
 
     plt.savefig(results_path / 'mixing_degree_vs_speed.png')
