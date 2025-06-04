@@ -48,7 +48,7 @@ pip install -e .
 3. In the GUI:
     - Browse and select the folder containing your raw videos/images.
     - Browse and select the folder containing your trained model.
-    - Set the batch size and image resize value as needed.
+    - Set the batch size and image resize value as needed. (These values usually don’t need to be changed—especially the image resize, since the model was trained on 256 by 256 pixels. Depending on your GPU's RAM, a batch size of 32 should be sufficient to run on a laptop.)
     - Click "Run Processing" to start the analysis.
 ![GUI_solid_suspension](https://github.com/user-attachments/assets/1ecdffe3-8abb-4e5d-9045-921e77a5fe18)
 
@@ -72,7 +72,7 @@ pip install -e .
 
 The model for prediciting the mixing degree can be found in sharepoint: Bioprocessing/Documents/OBP-EMC- Engineering Mixing Characterisation/Particle Suspension
 
-The folder is called : solid model 
+The folder is called : solid model. Ensure to download the folder before running the GUI. 
 
 ---
 
