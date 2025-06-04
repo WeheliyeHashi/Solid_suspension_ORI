@@ -13,7 +13,7 @@ setuptools.setup(
     zip_safe=False,
     entry_points={
          'console_scripts': [
-            'ss_gui=process_solidsuspension.ss_gui:main',
+            'ss_gui=process_solidsuspension.solidsuspension_gui:main',
             'ss_main_processing=process_solidsuspension.Process_main_images_GUI:main',
         ],
     },

@@ -2,7 +2,7 @@
 from tkinter import Tk, Label, Entry, Button, IntVar, StringVar, filedialog
 import os
 from pathlib import Path
-from Process_main_images_GUI import main_processor
+
 import process_solidsuspension as pss
 #%%
 class SolidSuspensionProcessorGUI:
